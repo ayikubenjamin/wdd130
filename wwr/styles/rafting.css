@@ -6,6 +6,47 @@
     --font-primary: 'Outfit', sans-serif;
     --font-accent: 'Rouge Script', cursive;
 }
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    height: 120px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    display: block;
+   
+}
+
+ header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+ header nav a {
+    text-decoration: none;
+    background-color: var(--accent1-color);
+    border: 1px solid black;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: var(--accent2-color);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: inline;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
 
 body {
     font-family: var(--font-primary);
@@ -64,13 +105,82 @@ p {
     border-radius: 10px;
 }
 
-/* Social Media Styling */
+.history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 40px;
+    background-color: var(--secondary-color);
+    text-align: justify;
+}
+
+.history h2 {
+    grid-column: 1 / -1; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.history img {
+    width: 200px; 
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+    gap: 20px;
+    text-align: center;
+}
+
+ h2 {
+    grid-column: 1 / -1; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.adventure-gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+ .sociallinks {
+    display: flex;
+    gap: 15px; 
+}
 .sociallinks a {
     text-decoration: none;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
 }
 
 .sociallinks img {
     width: 40px;
-    height: 40px;
+    height: auto;
 }
 
