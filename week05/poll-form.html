@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | HTML Form – User Poll</title>
+  <link rel="stylesheet" href="styles/poll-form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1>WDD 130 | Your Name | HTML Form – User Poll</h1>
+</header>
+<main>
+    <form>
+        <fieldset>
+            <legend>Contact information</legend>
+            <div class="form-item column2">
+            <label> fullname: <input type="text" name="fullname"></label>
+            </div>
+            <div class="form-item column2">
+            <label>email: <input type="email" name="usereamil"</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+            <div class="form-item column1"></div>
+            <label for="browser"  > What is your favourite browser </label>
+            <select id="browser" name="browser">
+                <option value="chrome">Chrome</option>
+                <option value="firefox">firefox</option>
+                <option value="safari">safari</option>
+                <option value="other">other</option>
+            </select>
+            </div>
+            <div class="form-item column1"></div>
+            <label for ="pet">Do you have a pet</label>
+            <input type="checkbox" id="pet" name="pet">
+            </div>
+            <label for="feedback">places you have lived</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="accra, koforidua, tema"></textarea>
+        </fieldset>
+        <button type="submit">submit poll</button> 
+    </form>
+
+</main>
+<footer>
+  <p>©2025 | HTML Form – User Poll Activity | Your Name</p>
+</footer>
+</body>
+</html>
