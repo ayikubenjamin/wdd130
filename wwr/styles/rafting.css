@@ -349,7 +349,7 @@ button:hover {
 
 thead {
   background-color:var(--primary-color);
-  color:var(--accent1-color);
+  color:var(--accent2-color);
 }
 
 tbody {
