@@ -357,11 +357,14 @@ tbody {
 }
 
 table {
-  border-collapse: collapse;
-  border: 2px solid;
-  font-family:var(--font-primary);
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+    width: 80%; 
+    margin: 20px auto; 
+    border-collapse: collapse; 
+    border: 2px solid var(--accent2-color); 
+    font-family: var(--font-primary); 
+    font-size: 0.8rem; 
+    letter-spacing: 1px;
+    height: 200px;
 }
 
 th,
@@ -373,3 +376,13 @@ td {
 td {
   text-align: center;
 }
+
+.trips-pics{
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
